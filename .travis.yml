@@ -1,0 +1,21 @@
+language: node_js
+env:
+  global:
+    secure: P010T+ocQoj29oiEQKXq7ik7ZqT2Ibqd+dcJdNaVmCtWHLU33iPRCrFNwGi3EScsQxNDOWFAlZTz+ezy86vVdWOmDoenhYnquETLV53LB4OPBeLlPp1JLB/Q1wk6bUMJNGA5wAcABln/qCju6cM5m86+LVUsiHuJq0as4HQ2HC+GUtkMAbjYCOd2dEKRpHi9R6h24+lVEKrvvpQu3AWTpP+0a/ACk8M4tkuiPsEmRdS5foG/Jzg0RUh6bw7bWyPz1nfF/YBT9E1uxhEnbLNgsE9Kn+a1NCURMK/HikI73U4Iz+aUOZUUGBjmBhyX0KuGyFPKbvu5sKUySObrlk3HgDBRlpPyL7CG5m2NfAMrYjc0iSgKXXwzcpcbXqfUGmpBIINkvMxAY8GaDGYazosmTF8fbGXB68EKaXcXwiJ3IOLhgiMLqSxAHcXfEbx9wd2PPTdM/EV1pCmCinXPKPDhu/dQQlHQoSHb0gh2UyoPLwekadx5N9dcaQOc8yB/1XG3nzRdDNWtBYI38SUpD4CWL194MVDj6TcOasYqPP9WnNQrUkMqbD2mAwPsNNrVNz9xKeljR0y0i3Al76aezoSh2ykT8hVLBF/fbBrF7rIkeK068X0rW9cYfciYfZTUOvKwEAvdlIrFSTqxidaUFdbxpADO/7nOrmv0DD90hXaSbs4=
+before_install:
+- openssl aes-256-cbc -K $encrypted_594c6d5ce775_key -iv $encrypted_594c6d5ce775_iv
+  -in cn.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+
+script: npm install
+addons:
+  ssh_known_hosts:
+  - "$HOST"
+after_success:
+- rsync -av -e "ssh -o StrictHostKeyChecking=no" build/index.html home@$HOST:/home/home/test
+notifications:
+  email:
+    recipients:
+    - cn100800@163.com
+    on_success: always
+    on_failure: always
