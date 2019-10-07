@@ -4,6 +4,11 @@ module.exports = {
   host: '0.0.0.0',
   port: 8080,
   themeConfig: {
+    nav: [
+      { text: '首页', link: '/' },
+      { text: 'Linux', link: 'https://cn100800.tk/ilinux.book' },
+      { text: 'google', link: 'https://google.com.hk' },
+    ],
     lastUpdated: '最后更新', 
   },
   plugins: [
