@@ -7,12 +7,15 @@ module.exports = {
     lastUpdated: '最后更新', 
   },
   plugins: [
-    'autobar': {},
-    '@vuepress/medium-zoom': {
+    [ 'autobar' ],
+    [ '@vuepress/medium-zoom',
+      { 
        selector: 'img.zoom-custom-imgs',
        options: {
-       margin: 16
-     },
-     '@vuepress/back-to-top',   
+         margin: 16
+       }
+      }
+    ],
+     ['@vuepress/back-to-top']
   ]
 }
