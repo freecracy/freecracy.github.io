@@ -1,0 +1,17 @@
+{
+  "name": "freecracy.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:freecracy/freecracy.github.io.git",
+  "author": "freecracy <12114073+freecracy@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.1.0",
+    "vuepress": "^1.1.0",
+    "vuepress-plugin-autobar": "boboidream/vuepress-bar"
+  },
+  "scripts": {
+    "dev": "vuepress dev articles",
+    "build": "vuepress build articles && sh deploy.sh"
+  }
+}
