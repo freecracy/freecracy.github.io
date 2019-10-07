@@ -6,7 +6,7 @@ set -e
 
 cd articles/.vuepress/dist
 
-echo 'cn100800.tk' > CNAME
+echo 'www.cn100800.tk' > CNAME
 
 git init
 git add -A
