@@ -7,6 +7,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: 'Linux', link: 'https://cn100800.tk/ilinux.book' },
+      { text: 'mail', link: 'mailto:freecracy1024@gmail.com' },
       { text: 'google', link: 'https://google.com.hk' },
     ],
     lastUpdated: '最后更新', 
@@ -21,6 +22,6 @@ module.exports = {
        }
       }
     ],
-     ['@vuepress/back-to-top']
+    ['@vuepress/back-to-top']
   ]
 }
