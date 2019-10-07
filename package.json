@@ -6,6 +6,7 @@
   "author": "freecracy <12114073+freecracy@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
     "@vuepress/plugin-medium-zoom": "^1.1.0",
     "vuepress": "^1.1.0",
     "vuepress-plugin-autobar": "boboidream/vuepress-bar"
