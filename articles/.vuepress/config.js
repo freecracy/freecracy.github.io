@@ -7,6 +7,8 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: 'Linux', link: 'https://cn100800.tk/ilinux.book' },
+      { text: 'Cloud', link: 'https://cloud.cn100800.tk' },
+      { text: 'Torrent', link: 'https://torrent.cn100800.tk' },
       { text: 'mail', link: 'mailto:freecracy1024@gmail.com' },
       { text: 'google', link: 'https://google.com.hk' },
     ],
