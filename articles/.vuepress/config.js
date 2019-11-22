@@ -7,6 +7,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: 'Linux', link: 'https://cn100800.tk/ilinux.book' },
+      { text: 'blog', link: 'https://cn100800.tk/wechat.book' },
       { text: 'Cloud', link: 'https://cloud.cn100800.tk' },
       { text: 'Torrent', link: 'https://torrent.cn100800.tk' },
       { text: 'ssh', link: 'https://web.cn100800.tk' },
