@@ -6,8 +6,9 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Linux', link: 'https://cn100800.tk/ilinux.book' },
       { text: 'blog', link: 'https://cn100800.tk/wechat.book' },
+      { text: 'Linux', link: 'https://cn100800.tk/ilinux.book' },
+      { text: 'Go', link: 'https://cn100800.tk/goistio.book' },
       { text: 'gfw', link: 'https://gfw.cn100800.tk' },
       { text: '上传', link: 'https://upload.cn100800.tk' },
       { text: '下载', link: 'https://download.cn100800.tk' },
