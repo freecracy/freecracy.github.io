@@ -12,7 +12,7 @@ module.exports = {
       { text: 'gfw', link: 'https://gfw.cn100800.tk' },
       { text: '上传', link: 'https://upload.cn100800.tk' },
       { text: '下载', link: 'https://download.cn100800.tk' },
-      { text: 'mail', link: 'mailto:freecracy1024@gmail.com' },
+      { text: '联系我', link: 'mailto:freecracy1024@gmail.com' },
       { text: 'google', link: 'https://google.com.hk' },
     ],
     lastUpdated: '最后更新', 
