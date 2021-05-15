@@ -2,7 +2,7 @@ name: docs
 
 on:
   push:
-    branches: [release-branch.v1]
+    branches: [release-branch.*]
   workflow_dispatch:
 
 jobs:
@@ -41,3 +41,5 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: docs/.vuepress/dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
