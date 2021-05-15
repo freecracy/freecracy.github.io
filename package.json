@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.14"
+  },
+  "version": "0.0.0"
+}
